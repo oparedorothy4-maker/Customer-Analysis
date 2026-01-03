@@ -116,16 +116,16 @@ Customers were segmented into:
 
 ## Project Structure
 
-customer-analysis/
-│
-├── README.md
-├── sql/
-│ └── customer_analysis.sql
-├── powerbi/
-│ └── customer_segmentation_dashboard.pbix
-└── data/
-└── customers.csv
+ my-github-repo/
+├── original customer_segmentation.pbix    ← Your Power BI dashboard file
+├── README.md                              ← Your project description and screenshots
+└── Screenshot/                            ← Folder containing screenshots
+    └── Screenshot.png                     ← Screenshot image of the dashboard
 
+
+
+### Screenshot of Dashboard
+[Customer Segmentation Dashboard](Screenshot/Screenshot.png)
 
 
 ---
