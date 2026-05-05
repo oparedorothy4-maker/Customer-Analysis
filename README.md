@@ -120,7 +120,7 @@ Ideal candidates for loyalty programs and premium offers
 └── Screenshot/                            ← Folder containing screenshots
     └── Screenshot.png                     ← Screenshot image of the dashboard
 
-
+[Customer Segmentation Dashboard](Screenshot/Power%20BI%20Dashboard.png)
 
 ## Key Skills Demonstrated
   SQL data exploration and aggregation  
