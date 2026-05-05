@@ -94,7 +94,7 @@ GROUP BY Gender;
 
 ```md
 ## Dashboard Preview
-[Dashboard](screenshots/screenshot.png)
+Screenshot/Power BI Dashboard.png
 
 
 ## Author
