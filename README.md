@@ -79,24 +79,18 @@ customer-analysis/
 ├── screenshots/
 └── README.md
 
-
 ## Key Skills Demonstrated
 - SQL data analysis (aggregation, filtering, grouping)
 - Customer segmentation
 - Data visualization (Power BI)
 - Business insight generation
 
-  ## Sample SQL Query
-```sql
+## Sample SQL Query
 SELECT Gender, AVG(Spending_Score) AS avg_spending
 FROM customers
 GROUP BY Gender;
 
-## Sample SQL Query
-```sql
-SELECT Gender, AVG(Spending_Score) AS avg_spending
-FROM customers
-GROUP BY Gender;
+![Customer Segmentation Dashboard](Screenshot/Power%20BI%20Dashboard.png)
 
 
 
