@@ -94,7 +94,8 @@ GROUP BY Gender;
 
 ```md
 ## Dashboard Preview
-Screenshot/Power BI Dashboard.png
+[Customer Segmentation Dashboard](Screenshot/Power%20BI%20Dashboard.png)
+
 
 
 ## Author
