@@ -92,9 +92,13 @@ SELECT Gender, AVG(Spending_Score) AS avg_spending
 FROM customers
 GROUP BY Gender;
 
-```md
-## Dashboard Preview
-[Customer Segmentation Dashboard](Screenshot/Power%20BI%20Dashboard.png)
+## Sample SQL Query
+```sql
+SELECT Gender, AVG(Spending_Score) AS avg_spending
+FROM customers
+GROUP BY Gender;
+
+
 
 
 
