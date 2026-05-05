@@ -1,141 +1,103 @@
-README
+# Customer Analysis & Segmentation
 
-# Customer Analysis & Segmentation Project
+## Objective
+Analyze customer demographics and spending behavior to identify high-value segments and support targeted marketing strategies.
 
-## Overview
-This project focuses on analyzing customer data to understand customer demographics, spending behavior, and segmentation.  
-The analysis was performed using **SQL** for data exploration and preparation, and **Power BI** for interactive visualization.
+## Business Problem
+Companies need to understand which customers generate the most value and how different segments behave in order to:
+- Increase revenue
+- Improve customer retention
+- Optimize marketing efforts
 
-The goal is to derive **actionable business insights** that can support marketing strategies, customer targeting, and revenue growth.
-
+## Dataset
+- Size: 2,000 customers  
+- Features:
+  - CustomerID
+  - Gender
+  - Age
+  - Annual Income
+  - Spending Score
+  - Profession
+  - Work Experience
+  - Family Size
 
 
 ## Tools & Technologies
-**Database:** MySQL  
-**Query Language:** SQL  
-**Visualization Tool:** Power BI  
-**IDE:** VS Code  
-**Dataset Size:** 2,000 customers  
+- SQL (MySQL)
+- Power BI
+- VS Code
+
+## Analysis Approach
+- Data exploration using SQL
+- Aggregation and segmentation
+- Visualization in Power BI
+- Insight generation for business decisions
+
+## Key Business Questions
+- Who are the most valuable customers?
+- How does spending vary across demographics?
+- What customer segments exist?
+- Is income a strong predictor of spending?
 
 
+## Key Insights
 
-## Dataset Description
-The dataset contains customer-level information with the following attributes:
+### Customer Distribution
+- Majority of customers are aged **56+**
+→ Indicates a mature customer base
 
-`CustomerID` – Unique customer identifier  
-`Gender` – Male / Female  
-`Age` – Customer age  
-`Annual_Income` – Annual income in monetary units  
-`Spending_Score` – Spending behavior score (0–100)  
-`Profession` – Customer profession  
-`Work_Experience` – Years of work experience  
-`Family_Size` – Number of family members  
+### Spending Behavior
+- Spending is **nearly identical across genders**
+→ Gender-based pricing or targeting is unnecessary
 
+### Customer Segmentation
+- Balanced distribution across low, medium, and high spenders
+→ Enables flexible marketing strategies
 
+### Income vs Spending
+- High income ≠ high spending
+→ Income alone is not a reliable predictor of customer value
 
-## Business Questions Answered
-
-### 1. What is the total number of customers?
-**Result:** 2,000 customers  
-**Visualization:** KPI card
-
-
-
-### 2. What is the gender distribution of customers?
-**Result:**  
-  Female: 59.3%  
-  Male: 40.7%  
-**Visualization:** Donut chart  
-**Insight:** The customer base is slightly female-dominated.
+### High-Value Customers
+- High-income + high-spending customers form the most valuable segment
+→ Ideal for loyalty programs and premium offerings
 
 
-
-### 3. What is the age distribution of customers?
-**Result:**  
-56+ years: 1,159 customers  
-26–35 years: 231 customers  
-46–55 years: 203 customers  
-36–45 years: 199 customers  
-18–25 years: 184 customers  
-**Visualization:** Bar chart  
-**Insight:** The majority of customers belong to the 56+ age group.
-
-
-
-### 4. How does spending behavior differ by gender?
-**Result:**  
-Female average spending score: ~50.97  
-Male average spending score: ~50.94  
-**Visualization:** Bar chart  
-**Insight:** Spending behavior is almost identical across genders.
-
-
-
-### 5. How are customers segmented by spending behavior?
-Customers were segmented into:
-**Low Spenders:** 728 customers  
-**Medium Spenders:** 671 customers  
-**High Spenders:** 601 customers  
-
-**Visualization:** Bar chart  
-**Insight:** Customer segments are well balanced, allowing differentiated marketing strategies.
-
-
-
-### 6. What is the relationship between annual income and spending score?
-**Visualization:** Scatter plot (Spending Score vs Annual Income by Segment)  
-**Insight:**  
-High income does not always imply high spending  
-Medium-income customers show wide spending variability
-
-
-
-### 7. Who are the high-income, high-spending customers?
-**Visualization:** Scatter plot  
-**Insight:**  
-These customers represent the most valuable segment  
-Ideal candidates for loyalty programs and premium offers
-
-
-## Actionable Insights & Recommendations
-
-1. **Targeted Marketing**
-   Design personalized campaigns based on spending segments
-
-2. **VIP & Loyalty Programs**
-   Focus on high-income, high-spending customers
-
-3. **Age-Based Strategies**
-   Develop products and offers tailored to the dominant 56+ age group
-
-4. **Gender-Neutral Campaigns**
-   Similar spending behavior suggests no need for gender-specific pricing strategies
-
+## Business Recommendations
+- Implement **targeted marketing campaigns** based on spending segments  
+- Develop **VIP/loyalty programs** for high-value customers  
+- Focus on **age-specific products** for the dominant 56+ segment  
+- Avoid unnecessary **gender-based segmentation**
 
 ## Project Structure
 
- my-github-repo/
-├── original customer_segmentation.pbix    ← Your Power BI dashboard file
-├── README.md                              ← Project description and screenshots
-└── Screenshot/                            ← Folder containing screenshots
-    └── Screenshot.png                     ← Screenshot image of the dashboard
+customer-analysis/
+│
+├── data/
+├── sql/
+├── dashboard/
+├── screenshots/
+└── README.md
 
-[Customer Segmentation Dashboard](Screenshot/Power%20BI%20Dashboard.png)
 
 ## Key Skills Demonstrated
-  SQL data exploration and aggregation  
-  Customer segmentation analysis  
-  Data visualization and dashboard design  
-  Business-oriented data interpretation  
-  End-to-end analytical workflow  
+- SQL data analysis (aggregation, filtering, grouping)
+- Customer segmentation
+- Data visualization (Power BI)
+- Business insight generation
 
+  ## Sample SQL Query
+```sql
+SELECT Gender, AVG(Spending_Score) AS avg_spending
+FROM customers
+GROUP BY Gender;
+
+```md
+## Dashboard Preview
+![Dashboard](screenshots/screenshot.png)
 
 
 ## Author
-**Dorothy Opare**  
-Junior Data Analyst | SQL | Power BI | Python  
-
-
-
-## Notes
-This project is intended for learning, portfolio demonstration, and entry-level data analyst applications.
+Dorothy Opare  
+Junior Data Analyst  
+Skills: SQL | Power BI | Python
