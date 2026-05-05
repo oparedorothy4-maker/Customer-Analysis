@@ -80,9 +80,11 @@ customer-analysis/
 └── README.md
 
 ## Sample SQL Query
+```sql
 SELECT Gender, AVG(Spending_Score) AS avg_spending
 FROM customers
 GROUP BY Gender;
+
 
 ## Key Skills Demonstrated
 - SQL data analysis (aggregation, filtering, grouping)
