@@ -94,7 +94,7 @@ GROUP BY Gender;
 
 ```md
 ## Dashboard Preview
-![Dashboard](screenshots/screenshot.png)
+[Dashboard](screenshots/screenshot.png)
 
 
 ## Author
