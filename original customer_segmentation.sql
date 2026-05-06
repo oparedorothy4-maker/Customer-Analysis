@@ -1,12 +1,12 @@
 original customer_segmentation.sql
 
--- 1. Create the database
+1. Create the database
 CREATE DATABASE IF NOT EXISTS customer_analysis;
 
--- 2. Use the database
+2. Use the database
 USE customer_analysis;
 
--- 3. Create the customers table
+3. Create the customers table
 CREATE TABLE IF NOT EXISTS customers (
     CustomerID INT PRIMARY KEY,
     Gender VARCHAR(10),
@@ -18,23 +18,23 @@ CREATE TABLE IF NOT EXISTS customers (
     Family_Size INT
 );
 
--- Question 1: Gender distribution
+Question 1: Gender distribution
 SELECT Gender, COUNT(*) AS NumberOfCustomers
 FROM customers
 GROUP BY Gender;
 
--- Question 2: Age distribution
+Question 2: Age distribution
 SELECT Age, COUNT(*) AS NumberOfCustomers
 FROM customers
 GROUP BY Age
 ORDER BY Age;
 
--- Question 3: Average spending score by gender
+Question 3: Average spending score by gender
 SELECT Gender, ROUND(AVG(Spending_Score),2) AS AvgSpendingScore
 FROM customers
 GROUP BY Gender;
 
--- Question 4: Customer segmentation (example: clusters by income and spending)
+Question 4: Customer segmentation (example: clusters by income and spending)
 SELECT 
     CustomerID,
     Gender,
@@ -49,7 +49,7 @@ SELECT
     END AS Segment
 FROM customers;
 
--- Question 5: High-income, high-spending customers
+Question 5: High-income, high-spending customers
 SELECT *
 FROM customers
 WHERE Annual_Income >= 70000 AND Spending_Score >= 70;
